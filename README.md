@@ -13,7 +13,7 @@ Hardware:
 
 Software:
 
- - Turtlebot2
+ - Dependent on Turtlebot code
  - SLAM: gmapping, hector_slam, cartographer SLAM, ORB-SLAM2, RGBD-SLAM-V2, AMCL
  - DeepLearning: Caffe, TensorFlow, Torch, Theano, Mxnet
  

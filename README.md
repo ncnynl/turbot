@@ -6,9 +6,11 @@ Hardware:
 
  - Kobuki 
  - TK1/TX1
- - RPlidar A1/RPlidar A2
+ - Power cable and Adapter for TK1/TX1
+ - Wireless Card (intel 7260) + antenna * 2 
+ - RPlidar A1 / RPlidar A2
  - Kinect v1
- - 10000mah battery 
+ - 10000mah lithium battery 
  - USB-HUB (4 ports)
 
 Software:

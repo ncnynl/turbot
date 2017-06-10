@@ -1,0 +1,8 @@
+<launch>
+  <param name="/camera/driver/data_skip" value="1" />
+  <include file="$(find turtlebot_bringup)/launch/3dsensor.launch" />
+
+  <include file="$(find turbot_slam)/launch/cartographer/cartographer.launch">
+    <arg name="configuration_basename" value="turtlebot_depth_camera_3d.lua" />
+  </include>
+</launch>

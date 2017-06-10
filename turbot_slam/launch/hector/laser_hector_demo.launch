@@ -1,0 +1,17 @@
+<launch>
+
+    <!-- Define laser type-->
+    <arg name="laser_sensor" default="$(env TURTLEBOT_LASER_SENSOR)" />
+
+    <!-- laser driver -->
+    <include file="$(find turtlebot_navigation)/laser/driver/$(arg laser_sensor)_laser.launch" />
+
+    <!-- Hector_mapping -->
+    <arg name="custom_mapping_launch_file" default="$(find turtlebot_navigation)/launch/includes/hector_mapping/$(arg laser_sensor)_hector_mapping.launch.xml"/>
+    <include file="$(arg custom_mapping_launch_file)"/>
+
+    <!-- Move base -->
+    <include file="$(find turtlebot_navigation)/launch/includes/move_base.launch.xml"/>
+
+
+</launch>

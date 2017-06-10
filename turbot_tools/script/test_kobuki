@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rqt -s kobuki_dashboard
+

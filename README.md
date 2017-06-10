@@ -22,14 +22,10 @@ Software:
 Doc:
  
   - http://www.ncnynl.com
-  
-  - For Turbot 1：http://www.ncnynl.com/category/turbot/
-  
-  - For Turbot 2：http://www.ncnynl.com/category/turbot-medium/
-  
-  - For SLAM： http://www.ncnynl.com/category/turbot-SLAM/
-  
-  - For DL： http://www.ncnynl.com/category/turbot-DL/
+  - For Turbot 1：http://www.ncnynl.com/category/turbot/
+  - For Turbot 2：http://www.ncnynl.com/category/turbot-medium/
+  - For SLAM： http://www.ncnynl.com/category/turbot-SLAM/
+  - For DL： http://www.ncnynl.com/category/turbot-DL/
   
  
 Picture:

@@ -1,0 +1,17 @@
+<launch>
+
+   <!-- 3D sensor -->
+  <arg name="laser_sensor" default="$(env TURTLEBOT_LASER_SENSOR)" />
+
+  <!-- laser driver -->
+  <include file="$(find turtlebot_navigation)/laser/driver/$(arg laser_sensor)_laser.launch" />
+
+  <!-- Karto -->
+  <arg name="custom_karto_launch_file" default="$(find turtlebot_navigation)/launch/includes/karto/$(arg laser_sensor)_karto.launch.xml"/>
+  <include file="$(arg custom_karto_launch_file)"/>
+
+  <!-- Move base -->
+  <include file="$(find turtlebot_navigation)/launch/includes/move_base.launch.xml"/>
+
+
+</launch>

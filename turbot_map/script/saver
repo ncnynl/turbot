@@ -1,0 +1,17 @@
+#!/bin/bash
+#author: ncnynl  
+#website:ncnynl.com 
+
+if [ ! -n "$1" ] ;then
+    echo "Please input file name"
+else
+    myPath="$HOME/map"
+
+    if [ ! -d "$myPath" ] ;then  
+        mkdir "$myPath"  
+    fi
+  
+    echo "Your filename is $1, Paht is $myPath/$1 "
+    rosrun map_server map_saver -f "$myPath"/$1
+fi
+

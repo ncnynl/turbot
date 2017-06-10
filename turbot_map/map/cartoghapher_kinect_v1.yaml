@@ -1,0 +1,7 @@
+image: /home/ubuntu/turtlebot_ws/src/turbot/turbot_map/map/cartoghapher_kinect_v1.pgm
+resolution: 0.035000
+origin: [-1.920950, -6.862728, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

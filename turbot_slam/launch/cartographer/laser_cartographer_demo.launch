@@ -1,0 +1,8 @@
+<launch>
+  <param name="urg_node/frame_id" value="plate_top_link" />
+
+
+  <include file="$(find turbot_slam)/launch/cartographer/cartographer.launch">
+    <arg name="configuration_basename" value="turtlebot_urg_lidar_2d.lua" />
+  </include>
+</launch>

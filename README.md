@@ -1,27 +1,32 @@
-# turbot
+# Turbot
 Turbot is Custom Edition of Turtlebot2 For SLAM and DL .
 
 
 Hardware:
 
  - Kobuki 
- - TK1/TX1
- - Power cable and Adapter for TK1/TX1
+ - TK1/TX1/TX2 
+ - Power cable and Adapter for TK1/TX1/TX2
  - Wireless Card (intel 7260) + antenna * 2 
- - RPlidar A1 / RPlidar A2
+ - RPlidar A1 / RPlidar A2 / EAI F4
  - Kinect v1
- - 10000mah lithium battery 
+ - 10400mah lithium battery
  - USB-HUB (4 ports)
 
 Software:
 
- - Dependent on Turtlebot code
+ - Dependent on Turtlebot / rplidar_ros / freenect and so on 
  - SLAM: gmapping, hector_slam, cartographer SLAM, ORB-SLAM2, RGBD-SLAM-V2, AMCL
  - DeepLearning: Caffe, TensorFlow, Torch, Theano, Mxnet
  
 Doc:
  
   - http://www.ncnynl.com
+  - For Turbot 1：http://www.ncnynl.com/category/turbot/
+  - For Turbot 2：http://www.ncnynl.com/category/turbot-medium/
+  - For SLAM： http://www.ncnynl.com/category/turbot-SLAM/
+  - For DL： http://www.ncnynl.com/category/turbot-DL/
+  
  
 Picture:
  

@@ -1,0 +1,4 @@
+<launch>
+ <include file="$(find turtlebot_follower)/launch/follower.launch" />
+</launch>
+

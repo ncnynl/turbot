@@ -63,25 +63,16 @@ class GoToPose():
 if __name__ == '__main__':
     try:
 
-	if len(sys.argv)!=3:
-	    sys.exit("Format is : rosrun turbot_code go_to_specific_point_on_map.py x y ")
+	#if len(sys.argv)!=3:
+	#    sys.exit("Format is : rosrun turbot_code go_to_specific_point_on_map.py x y ")
 
         rospy.init_node('nav_test', anonymous=False)
         navigator = GoToPose()
-	if sys.argv[1]:
-	    px = sys.argv[1]
-	    rospy.loginfo("The position x is %s", px)
-	else:        
-            sys.exit("Please input x")
-
-	if sys.argv[2]:
-           py = sys.argv[2]
-	   rospy.loginfo("The position y is %s", py)     
-	else:
-           sys.exit("Please input y")
+	#px = sys.argv[1]
+        #py = sys.argv[2]
 
         # Customize the following values so they are appropriate for your location
-        position = {'x': px, 'y' : py}
+        position = {'x': 0.134, 'y' : 1.27}
         quaternion = {'r1' : 0.000, 'r2' : 0.000, 'r3' : 0.000, 'r4' : 1.000}
 
         rospy.loginfo("Go to (%s, %s) pose", position['x'], position['y'])

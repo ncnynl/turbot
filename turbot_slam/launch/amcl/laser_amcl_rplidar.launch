@@ -1,6 +1,6 @@
 <launch>
   <!-- Define laser type-->
-  <arg name="laser_sensor" default="$(env TURTLEBOT_LASER_SENSOR)"/>  <!-- eai_f4, rplidar_a1, rplidar_a2 -->
+  <arg name="laser_sensor" default="$(env TURTLEBOT_LASER_SENSOR)"/>  <!-- eai, rplidar -->
   <!-- laser driver -->
   <include file="$(find turtlebot_navigation)/laser/driver/$(arg laser_sensor)_laser.launch" />
 
@@ -21,7 +21,7 @@
 
   <!-- Move base -->
   <arg name="custom_param_file" default="$(find turtlebot_navigation)/param/$(arg laser_sensor)_costmap_params.yaml"/>
-  <include file="$(find turtlebot_navigation)/launch/includes/move_base/rplidar_move_base.launch.xml">
+  <include file="$(find turtlebot_navigation)/launch/includes/move_base/laser_move_base.launch.xml">
     <arg name="custom_param_file" value="$(arg custom_param_file)"/>
   </include>
 

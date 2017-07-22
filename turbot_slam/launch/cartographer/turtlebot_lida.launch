@@ -1,0 +1,26 @@
+<launch>
+  <arg name="configuration_basename"/>
+
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch" />
+
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory
+              $(find cartographer_turtlebot)/configuration_files
+          -configuration_basename $(arg configuration_basename)"
+      output="screen">
+    <remap from="scan" to="/scan" />
+  </node>
+
+  <node name="flat_world_imu_node" pkg="cartographer_turtlebot"
+      type="cartographer_flat_world_imu_node" output="screen">
+    <remap from="imu_in" to="/mobile_base/sensors/imu_data_raw" />
+    <remap from="imu_out" to="/imu" />
+  </node>
+
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find cartographer_turtlebot
+          )/configuration_files/demo_turtlebot.rviz" />
+
+</launch>
+

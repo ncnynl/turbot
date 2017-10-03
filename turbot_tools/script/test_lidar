@@ -1,3 +1,4 @@
-<launch>
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rplidar_ros)/rviz/rplidar.rviz" />
-</launch>
+#!/bin/bash
+
+roslaunch turbot_tools test_rplidar.launch
+

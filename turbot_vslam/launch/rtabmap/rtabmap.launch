@@ -1,0 +1,5 @@
+<launch>
+
+<include file="$(find rtabmap_ros)/launch/demo/demo_turtlebot_mapping.launch" />
+
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+
+<include file="$(find rtabmap_ros)/launch/demo/demo_turtlebot_mapping.launch" />
+  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0.0 0.0 0.0 0 0 0.0 /map /odom 1000"/>
+</launch>

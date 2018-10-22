@@ -1,0 +1,8 @@
+<launch>
+  
+  <include file="$(find turbot_slam)/launch/cartographer/laser_cartographer_3d.launch" />
+
+  <include file="$(find turbot_slam)/launch/cartographer/cartographer_laser_3d.launch">
+    <arg name="configuration_basename" value="turtlebot_rslidar_3d.lua" />
+  </include>
+</launch>

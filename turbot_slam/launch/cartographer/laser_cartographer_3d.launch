@@ -1,0 +1,9 @@
+<launch>
+
+  <!-- Define laser type-->
+  <arg name="laser_sensor" default="$(env TURTLEBOT_LASER_SENSOR)" />
+
+  <!-- laser driver -->
+  <include file="$(find turtlebot_navigation)/laser/driver/$(arg laser_sensor)_laser_3d.launch" />
+
+</launch>

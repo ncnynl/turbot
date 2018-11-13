@@ -27,7 +27,7 @@ class NavSquare():
         angular_tolerance = radians(rospy.get_param("~angular_tolerance", 2)) # degrees to radians
         
         # Publisher to control the robot's speed
-        self.cmd_vel = rospy.Publisher('/cmd_vel', Twist, queue_size=5)
+        self.cmd_vel = rospy.Publisher('/cmd_vel_mux/input/navi', Twist, queue_size=5)
          
         # The base frame is base_footprint for the TurtleBot but base_link for Pi Robot
         self.base_frame = rospy.get_param('~base_frame', '/base_link')

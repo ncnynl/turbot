@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find turbot_rviz)/rviz/cartographer_3d.rviz" />
+
+</launch>

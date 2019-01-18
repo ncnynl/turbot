@@ -1,0 +1,4 @@
+<launch>
+ <include file="$(find turtlebot_panorama)/launch/panorama.launch" />
+</launch>
+
